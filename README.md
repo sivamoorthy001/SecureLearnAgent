@@ -99,6 +99,5 @@ The project leverages four distinct sub-agents and a robust session memory syste
 Built by a cybersecurity student with hands-on CTF competition experience, this tool was designed to address the real, everyday gaps in how students learn ethical hacking. Rather than spoon-feeding answers, SecureLearn mentors the student, mimicking the experience of having a seasoned senior hacker guiding you through a challenge.
 
 ## 🔮 Future Work
-- **Integration with AdaptShield**: Linking the agent with an AI-powered adaptive firewall system.
 - **Platform Integrations**: Utilizing the TryHackMe and HackTheBox APIs to automatically pull live CTF context.
 - **Web Interface**: Transitioning the CLI and MCP backend into a fully-fledged Flask web application.
