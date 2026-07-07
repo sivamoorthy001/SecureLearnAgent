@@ -1,0 +1,42 @@
+{
+  "curriculum": "# Learning Path: SQL Injection\n\n## Introduction\nSQL Injection (SQLi) is a code injection technique that might destroy your database. It is one of the most common web hacking techniques.\n\n## Beginner Concepts\n- **Understanding Databases:** What is SQL? How do SELECT, INSERT, and UPDATE work?\n- **The Vulnerability:** How concatenating user input into SQL strings causes SQLi.\n- **Classic Bypass:** `admin' OR 1=1 --`.\n\n## Intermediate Concepts\n- **Union-Based SQLi:** Using `UNION SELECT` to extract data from other tables.\n- **Error-Based SQLi:** Forcing database errors to leak information.\n- **Lab:** PortSwigger Web Security Academy SQLi labs.\n\n## Advanced Concepts\n- **Blind SQLi:** Boolean-based and Time-based SQLi where the app doesn't return data directly.\n- **Second-Order SQLi:** When injected payloads are stored and executed later.\n- **Bypassing WAFs:** Using encoding and obfuscation techniques.\n\n## Resources\n- OWASP SQL Injection Prevention Cheat Sheet\n- sqlmap documentation\n- PortSwigger Web Security Academy",
+  "ctf_hints": "## Hint 1\nTake a close look at the input fields and URL parameters. Does the application behave differently if you input special characters like `'` or `\"`?\n\n## Hint 2\nThe application might be executing a database query using your input. Have you tried injecting a classic tautology to bypass the login?\n\n## Hint 3\nTry entering `' OR '1'='1` in the username field. Make sure to comment out the rest of the query with `--` or `#` depending on the database type.",
+  "quiz": {
+    "questions": [
+      {
+        "question": "Which command is used to display the contents of a file in Linux?",
+        "options": {
+          "A": "ls",
+          "B": "cat",
+          "C": "pwd",
+          "D": "mkdir"
+        },
+        "correct_answer": "B",
+        "explanation": "The 'cat' (concatenate) command is standard for reading files to standard output."
+      },
+      {
+        "question": "Which file contains hashed passwords for local users on a modern Linux system?",
+        "options": {
+          "A": "/etc/passwd",
+          "B": "/etc/shadow",
+          "C": "/etc/group",
+          "D": "/var/log/auth.log"
+        },
+        "correct_answer": "B",
+        "explanation": "While /etc/passwd contains user info, /etc/shadow is restricted and contains the actual password hashes."
+      },
+      {
+        "question": "What is the primary function of the 'chmod' command?",
+        "options": {
+          "A": "Change file owner",
+          "B": "Change system date",
+          "C": "Change file permissions",
+          "D": "Monitor running processes"
+        },
+        "correct_answer": "C",
+        "explanation": "'chmod' stands for change mode, and modifies read, write, and execute permissions of a file or directory."
+      }
+    ]
+  },
+  "personalization": "# Recommended Topic: Web Application Security Basics\n\nBased on your profile, you haven't studied any specific web vulnerabilities yet. Before diving into complex challenges, it's crucial to understand how web applications function and the common flaws they exhibit.\n\n**Why this topic?**\nYou currently have a 1-day study streak and no recorded weak areas. Building a foundation in Web Application Security will prepare you for topics like SQL Injection and XSS, which are fundamental to modern cybersecurity.\n\n**What you will learn:**\n- HTTP/HTTPS protocols\n- The OSI model conceptually\n- Basic web architecture (frontend, backend, databases)\n- The OWASP Top 10 introduction"
+}
